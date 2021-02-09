@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siakad Untad</title>
+    <link rel="icon" href="Resources/Untad.png">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/49b77af1a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+            <header>MENU</header>
+            <a href="Start.html">
+            <i class="fas fa-home"></i>
+            <span>Menu Utama</span>
+            </a>
+        </div>
+
+        <div class="navbar">
+            <h1 class="judul">Sistem Informasi Akademik <span>Universitas Tadulako</span></h1>
+        </div>
+
+        <div class="main">
+            <div class="tulisanlogin">
+                <img src="resources/Untad.png" alt="logo" class="logo">
+                <h1>LOGIN DOSEN</h1>
+            </div>
+
+            <div class="login">
+                <form action="">
+                    <i class="fa fa-user"></i><label>Username</label>
+                        <input type="text" name="username" class="form_login" placeholder="Ketik disini">
+        
+                    <i class="fa fa-key"></i><label>Password</label>
+                    <input type="text" name="password" class="form_login" placeholder="Ketik disini">
+                        
+                    <input type="submit" class="tombol_login" value="LOGIN">
+                </form>
+                <div class="lupa">
+                    <a href="#">Lupa Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

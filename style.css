@@ -1,0 +1,310 @@
+body {
+    background: url(BG.png);
+    margin: 0px;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    background: #004BBB;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    text-align: center;
+}
+
+.navbar h1 {
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 24px;
+    margin: 10px 0;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.navbar h1 span {
+    font-weight: bold;
+}
+
+.navbar img {
+    height: 30px;
+    margin: 10px 0;
+}
+
+
+.fa-bars {
+    padding: 22.5px 20px;
+    float: left;
+    color: white;
+}
+
+img.user {
+    padding: 5px 20px;
+    float: right;
+}
+
+.main {
+    background: white;
+    box-shadow: gray;
+    width: 50%;
+    height: fit-content;
+    margin: 20px auto;
+    border-radius: 35px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.main h1 {
+    padding: 5px;
+    margin: 0px 5px;
+    color: #004BBB;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+
+.main h2 {
+    padding: 0 5px;
+    margin-bottom: 10px;
+    color: #004BBB;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.main img {
+    height: 250px;
+    padding: 5px 0;
+    margin: 5px;
+}
+
+.tulisanlogin {
+    text-align: center;
+}
+
+.login{
+	width: 350px;
+	/*meletakkan form ke tengah*/
+    margin: auto;
+	padding: 5px 20px;
+}
+
+.fa-user {
+    padding-right: 10px;
+}
+
+.fa-key {
+    padding-right: 10px;
+}
+
+label {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.form_login{
+	/*membuat lebar form penuh*/
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+}
+
+.tombol_login{
+	background: #004BBB;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 25px;
+	padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.lupa a{
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.lupa a:hover{
+    font-size: 12px;
+    font-style: italic;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.lupa{
+    text-align: center;
+    padding: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    left: -250px;
+    height: 100%;
+    background: #004BBB;
+    transition: all .5s ease;
+}
+.sidebar header{
+    font-size: 28px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #004BBB;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.sidebar a{
+    display: block;
+    height: relative;
+    width: 100%;
+    color: white;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    transition: all .5s ease;
+    font-size: 15px;
+}
+a.active,a:hover{
+    background-color: #03419e;
+}
+.sidebar a i{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.sidebar a span{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#check{
+    display: none;
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    margin-left: 295px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ label #cancel{
+    margin-left: 255px;
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width : 860px){
+    .sidebar{
+        height: auto;
+        width: 70px;
+        left: 0;
+        margin: 100px 0;
+    }
+
+    header,#btn,#cancel{
+        display: none;
+    }
+
+    span{
+        position: absolute;
+        margin-left: 23px;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sidebar a{
+        height: 60px;
+    }
+
+    .sidebar a i{
+        margin-left: -10px;
+    }
+
+    a:hover {
+        width: 200px;
+        background: inherit;
+    }
+    
+    .sidebar a:hover span{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.fa-bars {
+    padding: 20px;
+}
+
+.tombolPilihan a {
+    padding: 20px 15px;
+    background-color: #004BBB;
+    border-radius: 35px;
+    margin: 10px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    transition: all .5s ease;
+}
+
+.tombolPilihan {
+    margin: auto 20px;
+    text-align: center;
+}
+
+a.mahasiswa {
+    background-color: #4fada6;
+}
+
+a.dosen {
+    background-color: #f35a6c;
+}
+
+a.dosen:hover {
+    background-color: #b82e3e;
+    letter-spacing: 2px;
+}
+
+a.mahasiswa:hover {
+    background-color: #287570;
+    letter-spacing: 2px;
+}
+
+.main.pilihan {
+    margin: 120px auto;
+}
